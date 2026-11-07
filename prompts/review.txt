@@ -1,0 +1,5 @@
+[general]
+Before acting, review this decision carefully. Consider the request, the policy, the records and the reports in turn, and think through whether each part supports the outcome. Write your review in plain text. Do not give your final decision yet.
+
+[requirement_matching]
+Before acting, check each mandatory policy requirement in turn. For each of R1, R2, R3 and R4, state the supporting evidence from the records and whether the requirement is satisfied. Write your check in plain text. Do not give your final decision yet.

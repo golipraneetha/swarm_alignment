@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+
+# Raw experiment outputs can be large. Scenarios are tracked so they stay frozen.
+data/runs/*
+!data/runs/.gitkeep

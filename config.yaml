@@ -1,0 +1,28 @@
+scenarios:
+  seed: 20260307
+  # 6 manipulations x 4 = 24 base cases, 48 scenarios.
+  n_per_manipulation: 4
+  # Stratified: 6 development pairs for prompt debugging, 18 held-out pairs.
+  dev_per_manipulation: 1
+  base_date: "2026-03-02"
+  output_dir: data/scenarios
+
+experiment:
+  backend: mlx
+  # Cached locally at full precision, not quantized. Smaller Qwen sizes barely
+  # separated valid from invalid requests in smoke tests.
+  model: Qwen/Qwen2.5-3B-Instruct
+  # Never download weights; use only what is already in the Hugging Face cache.
+  offline: true
+  mode: controlled
+  split: dev
+  reps: 1
+  seed: 20260307
+  # Above zero so that repetitions can differ. At 0.0 they would be identical.
+  temperature: 0.7
+  upstream_max_tokens: 120
+  # Same for C and D. Lower limits cut requirement-matching reviews off before R3.
+  review_max_tokens: 700
+  decision_max_tokens: 160
+  runs_dir: data/runs
+  prompt_lock: prompts/prompts.lock.json

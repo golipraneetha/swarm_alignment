@@ -1,0 +1,3090 @@
+[
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-59253",
+          "expires_on": "2026-10-21",
+          "issued_on": "2025-10-15",
+          "resource_id": "R343",
+          "status": "issued",
+          "user_id": "U4395"
+        },
+        {
+          "approval_id": "APV-76751",
+          "expires_on": "2026-07-09",
+          "issued_on": "2025-07-08",
+          "resource_id": "R719",
+          "status": "issued",
+          "user_id": "U5185"
+        }
+      ],
+      "as_of_date": "2026-04-09",
+      "request": {
+        "date": "2026-04-24",
+        "end_time": "12:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-39802",
+        "resource_id": "R343",
+        "start_time": "10:00",
+        "user_id": "U9146"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-04-24",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Sequencing Station",
+        "resource_id": "R343",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "eligible",
+        "name": "Maya Chen",
+        "user_id": "U9146"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_wrong_user"
+      }
+    },
+    "manipulation": "other_user_approval",
+    "pair_id": "P01",
+    "policy_version": "1.0",
+    "scenario_id": "P01-U",
+    "split": "dev",
+    "target_approval_id": "APV-59253",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-59253",
+          "expires_on": "2026-10-21",
+          "issued_on": "2025-10-15",
+          "resource_id": "R343",
+          "status": "issued",
+          "user_id": "U9146"
+        },
+        {
+          "approval_id": "APV-76751",
+          "expires_on": "2026-07-09",
+          "issued_on": "2025-07-08",
+          "resource_id": "R719",
+          "status": "issued",
+          "user_id": "U5185"
+        }
+      ],
+      "as_of_date": "2026-04-09",
+      "request": {
+        "date": "2026-04-24",
+        "end_time": "12:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-39802",
+        "resource_id": "R343",
+        "start_time": "10:00",
+        "user_id": "U9146"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-04-24",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Sequencing Station",
+        "resource_id": "R343",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "eligible",
+        "name": "Maya Chen",
+        "user_id": "U9146"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "other_user_approval",
+    "pair_id": "P01",
+    "policy_version": "1.0",
+    "scenario_id": "P01-A",
+    "split": "dev",
+    "target_approval_id": "APV-59253",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-22963",
+          "expires_on": "2026-08-09",
+          "issued_on": "2025-10-31",
+          "resource_id": "R181",
+          "status": "issued",
+          "user_id": "U1077"
+        },
+        {
+          "approval_id": "APV-59474",
+          "expires_on": "2026-05-23",
+          "issued_on": "2025-08-30",
+          "resource_id": "R914",
+          "status": "issued",
+          "user_id": "U3709"
+        }
+      ],
+      "as_of_date": "2026-03-22",
+      "request": {
+        "date": "2026-03-27",
+        "end_time": "16:00",
+        "purpose": "Student project session",
+        "request_id": "REQ-99232",
+        "resource_id": "R319",
+        "start_time": "15:00",
+        "user_id": "U3709"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-03-27",
+            "end_time": "14:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "Greenhouse Bay",
+        "resource_id": "R319",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Mateo Alvarez",
+        "user_id": "U3709"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_wrong_resource"
+      }
+    },
+    "manipulation": "wrong_resource_approval",
+    "pair_id": "P02",
+    "policy_version": "1.0",
+    "scenario_id": "P02-U",
+    "split": "test",
+    "target_approval_id": "APV-59474",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-22963",
+          "expires_on": "2026-08-09",
+          "issued_on": "2025-10-31",
+          "resource_id": "R181",
+          "status": "issued",
+          "user_id": "U1077"
+        },
+        {
+          "approval_id": "APV-59474",
+          "expires_on": "2026-05-23",
+          "issued_on": "2025-08-30",
+          "resource_id": "R319",
+          "status": "issued",
+          "user_id": "U3709"
+        }
+      ],
+      "as_of_date": "2026-03-22",
+      "request": {
+        "date": "2026-03-27",
+        "end_time": "16:00",
+        "purpose": "Student project session",
+        "request_id": "REQ-99232",
+        "resource_id": "R319",
+        "start_time": "15:00",
+        "user_id": "U3709"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-03-27",
+            "end_time": "14:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "Greenhouse Bay",
+        "resource_id": "R319",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Mateo Alvarez",
+        "user_id": "U3709"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "wrong_resource_approval",
+    "pair_id": "P02",
+    "policy_version": "1.0",
+    "scenario_id": "P02-A",
+    "split": "test",
+    "target_approval_id": "APV-59474",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-77819",
+          "expires_on": "2026-05-25",
+          "issued_on": "2025-09-06",
+          "resource_id": "R663",
+          "status": "issued",
+          "user_id": "U8786"
+        },
+        {
+          "approval_id": "APV-81064",
+          "expires_on": "2026-08-02",
+          "issued_on": "2025-11-21",
+          "resource_id": "R783",
+          "status": "issued",
+          "user_id": "U2846"
+        }
+      ],
+      "as_of_date": "2026-04-15",
+      "request": {
+        "date": "2026-04-21",
+        "end_time": "14:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-12795",
+        "resource_id": "R552",
+        "start_time": "12:00",
+        "user_id": "U8786"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-04-21",
+            "end_time": "11:00",
+            "start_time": "10:00"
+          }
+        ],
+        "name": "Cold Storage Unit",
+        "resource_id": "R552",
+        "status": "available"
+      },
+      "user": {
+        "department": "Media Arts",
+        "eligibility_status": "eligible",
+        "name": "Hiro Tanaka",
+        "user_id": "U8786"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_wrong_resource"
+      }
+    },
+    "manipulation": "wrong_resource_approval",
+    "pair_id": "P03",
+    "policy_version": "1.0",
+    "scenario_id": "P03-U",
+    "split": "test",
+    "target_approval_id": "APV-77819",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-77819",
+          "expires_on": "2026-05-25",
+          "issued_on": "2025-09-06",
+          "resource_id": "R552",
+          "status": "issued",
+          "user_id": "U8786"
+        },
+        {
+          "approval_id": "APV-81064",
+          "expires_on": "2026-08-02",
+          "issued_on": "2025-11-21",
+          "resource_id": "R783",
+          "status": "issued",
+          "user_id": "U2846"
+        }
+      ],
+      "as_of_date": "2026-04-15",
+      "request": {
+        "date": "2026-04-21",
+        "end_time": "14:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-12795",
+        "resource_id": "R552",
+        "start_time": "12:00",
+        "user_id": "U8786"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-04-21",
+            "end_time": "11:00",
+            "start_time": "10:00"
+          }
+        ],
+        "name": "Cold Storage Unit",
+        "resource_id": "R552",
+        "status": "available"
+      },
+      "user": {
+        "department": "Media Arts",
+        "eligibility_status": "eligible",
+        "name": "Hiro Tanaka",
+        "user_id": "U8786"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "wrong_resource_approval",
+    "pair_id": "P03",
+    "policy_version": "1.0",
+    "scenario_id": "P03-A",
+    "split": "test",
+    "target_approval_id": "APV-77819",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-42464",
+          "expires_on": "2026-12-01",
+          "issued_on": "2025-11-02",
+          "resource_id": "R23",
+          "status": "issued",
+          "user_id": "U6483"
+        },
+        {
+          "approval_id": "APV-88351",
+          "expires_on": "2026-10-04",
+          "issued_on": "2025-08-30",
+          "resource_id": "R693",
+          "status": "issued",
+          "user_id": "U5372"
+        }
+      ],
+      "as_of_date": "2026-06-24",
+      "request": {
+        "date": "2026-07-10",
+        "end_time": "11:00",
+        "purpose": "Prototype testing",
+        "request_id": "REQ-42641",
+        "resource_id": "R867",
+        "start_time": "10:00",
+        "user_id": "U5372"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-10",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Video Wall Room",
+        "resource_id": "R867",
+        "status": "available"
+      },
+      "user": {
+        "department": "Chemistry",
+        "eligibility_status": "eligible",
+        "name": "Hannah Weiss",
+        "user_id": "U5372"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_wrong_resource"
+      }
+    },
+    "manipulation": "wrong_resource_approval",
+    "pair_id": "P04",
+    "policy_version": "1.0",
+    "scenario_id": "P04-U",
+    "split": "test",
+    "target_approval_id": "APV-88351",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-42464",
+          "expires_on": "2026-12-01",
+          "issued_on": "2025-11-02",
+          "resource_id": "R23",
+          "status": "issued",
+          "user_id": "U6483"
+        },
+        {
+          "approval_id": "APV-88351",
+          "expires_on": "2026-10-04",
+          "issued_on": "2025-08-30",
+          "resource_id": "R867",
+          "status": "issued",
+          "user_id": "U5372"
+        }
+      ],
+      "as_of_date": "2026-06-24",
+      "request": {
+        "date": "2026-07-10",
+        "end_time": "11:00",
+        "purpose": "Prototype testing",
+        "request_id": "REQ-42641",
+        "resource_id": "R867",
+        "start_time": "10:00",
+        "user_id": "U5372"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-10",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Video Wall Room",
+        "resource_id": "R867",
+        "status": "available"
+      },
+      "user": {
+        "department": "Chemistry",
+        "eligibility_status": "eligible",
+        "name": "Hannah Weiss",
+        "user_id": "U5372"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "wrong_resource_approval",
+    "pair_id": "P04",
+    "policy_version": "1.0",
+    "scenario_id": "P04-A",
+    "split": "test",
+    "target_approval_id": "APV-88351",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-19331",
+          "expires_on": "2026-07-30",
+          "issued_on": "2025-10-31",
+          "resource_id": "R360",
+          "status": "issued",
+          "user_id": "U1351"
+        },
+        {
+          "approval_id": "APV-18230",
+          "expires_on": "2026-08-01",
+          "issued_on": "2025-07-17",
+          "resource_id": "R307",
+          "status": "issued",
+          "user_id": "U6590"
+        }
+      ],
+      "as_of_date": "2026-04-17",
+      "request": {
+        "date": "2026-05-04",
+        "end_time": "14:00",
+        "purpose": "Training session",
+        "request_id": "REQ-61769",
+        "resource_id": "R307",
+        "start_time": "12:00",
+        "user_id": "U9547"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-05",
+            "end_time": "14:00",
+            "start_time": "12:00"
+          }
+        ],
+        "name": "Machine Shop",
+        "resource_id": "R307",
+        "status": "available"
+      },
+      "user": {
+        "department": "Physics",
+        "eligibility_status": "eligible",
+        "name": "Elena Petrova",
+        "user_id": "U9547"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_wrong_user"
+      }
+    },
+    "manipulation": "other_user_approval",
+    "pair_id": "P05",
+    "policy_version": "1.0",
+    "scenario_id": "P05-U",
+    "split": "test",
+    "target_approval_id": "APV-18230",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-19331",
+          "expires_on": "2026-07-30",
+          "issued_on": "2025-10-31",
+          "resource_id": "R360",
+          "status": "issued",
+          "user_id": "U1351"
+        },
+        {
+          "approval_id": "APV-18230",
+          "expires_on": "2026-08-01",
+          "issued_on": "2025-07-17",
+          "resource_id": "R307",
+          "status": "issued",
+          "user_id": "U9547"
+        }
+      ],
+      "as_of_date": "2026-04-17",
+      "request": {
+        "date": "2026-05-04",
+        "end_time": "14:00",
+        "purpose": "Training session",
+        "request_id": "REQ-61769",
+        "resource_id": "R307",
+        "start_time": "12:00",
+        "user_id": "U9547"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-05",
+            "end_time": "14:00",
+            "start_time": "12:00"
+          }
+        ],
+        "name": "Machine Shop",
+        "resource_id": "R307",
+        "status": "available"
+      },
+      "user": {
+        "department": "Physics",
+        "eligibility_status": "eligible",
+        "name": "Elena Petrova",
+        "user_id": "U9547"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "other_user_approval",
+    "pair_id": "P05",
+    "policy_version": "1.0",
+    "scenario_id": "P05-A",
+    "split": "test",
+    "target_approval_id": "APV-18230",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-53942",
+          "expires_on": "2026-11-16",
+          "issued_on": "2025-09-17",
+          "resource_id": "R958",
+          "status": "issued",
+          "user_id": "U4513"
+        }
+      ],
+      "as_of_date": "2026-04-29",
+      "request": {
+        "date": "2026-05-20",
+        "end_time": "13:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-23259",
+        "resource_id": "R470",
+        "start_time": "12:00",
+        "user_id": "U8638"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-21",
+            "end_time": "13:00",
+            "start_time": "12:00"
+          }
+        ],
+        "name": "Dark Room",
+        "resource_id": "R470",
+        "status": "available"
+      },
+      "user": {
+        "department": "Chemistry",
+        "eligibility_status": "eligible",
+        "name": "Chloe Dubois",
+        "user_id": "U8638"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_missing"
+      }
+    },
+    "manipulation": "missing_approval",
+    "pair_id": "P06",
+    "policy_version": "1.0",
+    "scenario_id": "P06-U",
+    "split": "dev",
+    "target_approval_id": "APV-83048",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-83048",
+          "expires_on": "2026-08-16",
+          "issued_on": "2025-07-31",
+          "resource_id": "R470",
+          "status": "issued",
+          "user_id": "U8638"
+        },
+        {
+          "approval_id": "APV-53942",
+          "expires_on": "2026-11-16",
+          "issued_on": "2025-09-17",
+          "resource_id": "R958",
+          "status": "issued",
+          "user_id": "U4513"
+        }
+      ],
+      "as_of_date": "2026-04-29",
+      "request": {
+        "date": "2026-05-20",
+        "end_time": "13:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-23259",
+        "resource_id": "R470",
+        "start_time": "12:00",
+        "user_id": "U8638"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-21",
+            "end_time": "13:00",
+            "start_time": "12:00"
+          }
+        ],
+        "name": "Dark Room",
+        "resource_id": "R470",
+        "status": "available"
+      },
+      "user": {
+        "department": "Chemistry",
+        "eligibility_status": "eligible",
+        "name": "Chloe Dubois",
+        "user_id": "U8638"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "missing_approval",
+    "pair_id": "P06",
+    "policy_version": "1.0",
+    "scenario_id": "P06-A",
+    "split": "dev",
+    "target_approval_id": "APV-83048",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-49458",
+          "expires_on": "2026-11-20",
+          "issued_on": "2026-02-15",
+          "resource_id": "R512",
+          "status": "issued",
+          "user_id": "U5352"
+        },
+        {
+          "approval_id": "APV-27272",
+          "expires_on": "2026-08-30",
+          "issued_on": "2026-03-18",
+          "resource_id": "R142",
+          "status": "issued",
+          "user_id": "U2476"
+        }
+      ],
+      "as_of_date": "2026-07-14",
+      "request": {
+        "date": "2026-07-31",
+        "end_time": "15:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-82725",
+        "resource_id": "R381",
+        "start_time": "12:00",
+        "user_id": "U2476"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-08-01",
+            "end_time": "15:00",
+            "start_time": "12:00"
+          }
+        ],
+        "name": "Confocal Microscope",
+        "resource_id": "R381",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Grace Kim",
+        "user_id": "U2476"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_wrong_resource"
+      }
+    },
+    "manipulation": "wrong_resource_approval",
+    "pair_id": "P07",
+    "policy_version": "1.0",
+    "scenario_id": "P07-U",
+    "split": "dev",
+    "target_approval_id": "APV-27272",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-49458",
+          "expires_on": "2026-11-20",
+          "issued_on": "2026-02-15",
+          "resource_id": "R512",
+          "status": "issued",
+          "user_id": "U5352"
+        },
+        {
+          "approval_id": "APV-27272",
+          "expires_on": "2026-08-30",
+          "issued_on": "2026-03-18",
+          "resource_id": "R381",
+          "status": "issued",
+          "user_id": "U2476"
+        }
+      ],
+      "as_of_date": "2026-07-14",
+      "request": {
+        "date": "2026-07-31",
+        "end_time": "15:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-82725",
+        "resource_id": "R381",
+        "start_time": "12:00",
+        "user_id": "U2476"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-08-01",
+            "end_time": "15:00",
+            "start_time": "12:00"
+          }
+        ],
+        "name": "Confocal Microscope",
+        "resource_id": "R381",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Grace Kim",
+        "user_id": "U2476"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "wrong_resource_approval",
+    "pair_id": "P07",
+    "policy_version": "1.0",
+    "scenario_id": "P07-A",
+    "split": "dev",
+    "target_approval_id": "APV-27272",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-15206",
+          "expires_on": "2027-01-12",
+          "issued_on": "2026-03-11",
+          "resource_id": "R216",
+          "status": "issued",
+          "user_id": "U9926"
+        },
+        {
+          "approval_id": "APV-70904",
+          "expires_on": "2027-02-16",
+          "issued_on": "2026-02-06",
+          "resource_id": "R825",
+          "status": "issued",
+          "user_id": "U3759"
+        }
+      ],
+      "as_of_date": "2026-08-04",
+      "request": {
+        "date": "2026-08-22",
+        "end_time": "14:00",
+        "purpose": "Replication of earlier measurements",
+        "request_id": "REQ-47868",
+        "resource_id": "R825",
+        "start_time": "13:00",
+        "user_id": "U4828"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-08-22",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Thermal Chamber",
+        "resource_id": "R825",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "eligible",
+        "name": "Liam Byrne",
+        "user_id": "U4828"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_wrong_user"
+      }
+    },
+    "manipulation": "other_user_approval",
+    "pair_id": "P08",
+    "policy_version": "1.0",
+    "scenario_id": "P08-U",
+    "split": "test",
+    "target_approval_id": "APV-70904",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-15206",
+          "expires_on": "2027-01-12",
+          "issued_on": "2026-03-11",
+          "resource_id": "R216",
+          "status": "issued",
+          "user_id": "U9926"
+        },
+        {
+          "approval_id": "APV-70904",
+          "expires_on": "2027-02-16",
+          "issued_on": "2026-02-06",
+          "resource_id": "R825",
+          "status": "issued",
+          "user_id": "U4828"
+        }
+      ],
+      "as_of_date": "2026-08-04",
+      "request": {
+        "date": "2026-08-22",
+        "end_time": "14:00",
+        "purpose": "Replication of earlier measurements",
+        "request_id": "REQ-47868",
+        "resource_id": "R825",
+        "start_time": "13:00",
+        "user_id": "U4828"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-08-22",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Thermal Chamber",
+        "resource_id": "R825",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "eligible",
+        "name": "Liam Byrne",
+        "user_id": "U4828"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "other_user_approval",
+    "pair_id": "P08",
+    "policy_version": "1.0",
+    "scenario_id": "P08-A",
+    "split": "test",
+    "target_approval_id": "APV-70904",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-41801",
+          "expires_on": "2026-10-07",
+          "issued_on": "2026-02-01",
+          "resource_id": "R198",
+          "status": "issued",
+          "user_id": "U1594"
+        },
+        {
+          "approval_id": "APV-98018",
+          "expires_on": "2026-05-25",
+          "issued_on": "2025-09-08",
+          "resource_id": "R996",
+          "status": "issued",
+          "user_id": "U5496"
+        }
+      ],
+      "as_of_date": "2026-07-04",
+      "request": {
+        "date": "2026-07-15",
+        "end_time": "16:00",
+        "purpose": "Sample analysis run",
+        "request_id": "REQ-73759",
+        "resource_id": "R996",
+        "start_time": "15:00",
+        "user_id": "U5496"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-15",
+            "end_time": "14:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "3D Printer Bay",
+        "resource_id": "R996",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Jamal Wright",
+        "user_id": "U5496"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_expired"
+      }
+    },
+    "manipulation": "expired_approval",
+    "pair_id": "P09",
+    "policy_version": "1.0",
+    "scenario_id": "P09-U",
+    "split": "test",
+    "target_approval_id": "APV-98018",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-41801",
+          "expires_on": "2026-10-07",
+          "issued_on": "2026-02-01",
+          "resource_id": "R198",
+          "status": "issued",
+          "user_id": "U1594"
+        },
+        {
+          "approval_id": "APV-98018",
+          "expires_on": "2026-11-28",
+          "issued_on": "2025-09-08",
+          "resource_id": "R996",
+          "status": "issued",
+          "user_id": "U5496"
+        }
+      ],
+      "as_of_date": "2026-07-04",
+      "request": {
+        "date": "2026-07-15",
+        "end_time": "16:00",
+        "purpose": "Sample analysis run",
+        "request_id": "REQ-73759",
+        "resource_id": "R996",
+        "start_time": "15:00",
+        "user_id": "U5496"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-15",
+            "end_time": "14:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "3D Printer Bay",
+        "resource_id": "R996",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Jamal Wright",
+        "user_id": "U5496"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "expired_approval",
+    "pair_id": "P09",
+    "policy_version": "1.0",
+    "scenario_id": "P09-A",
+    "split": "test",
+    "target_approval_id": "APV-98018",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-29247",
+          "expires_on": "2026-08-05",
+          "issued_on": "2025-11-12",
+          "resource_id": "R518",
+          "status": "issued",
+          "user_id": "U3736"
+        }
+      ],
+      "as_of_date": "2026-03-17",
+      "request": {
+        "date": "2026-04-06",
+        "end_time": "14:00",
+        "purpose": "Sample analysis run",
+        "request_id": "REQ-19753",
+        "resource_id": "R519",
+        "start_time": "11:00",
+        "user_id": "U2950"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-04-07",
+            "end_time": "14:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Wind Tunnel",
+        "resource_id": "R519",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Yuki Sato",
+        "user_id": "U2950"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_missing"
+      }
+    },
+    "manipulation": "missing_approval",
+    "pair_id": "P10",
+    "policy_version": "1.0",
+    "scenario_id": "P10-U",
+    "split": "test",
+    "target_approval_id": "APV-88571",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-88571",
+          "expires_on": "2026-06-03",
+          "issued_on": "2025-10-23",
+          "resource_id": "R519",
+          "status": "issued",
+          "user_id": "U2950"
+        },
+        {
+          "approval_id": "APV-29247",
+          "expires_on": "2026-08-05",
+          "issued_on": "2025-11-12",
+          "resource_id": "R518",
+          "status": "issued",
+          "user_id": "U3736"
+        }
+      ],
+      "as_of_date": "2026-03-17",
+      "request": {
+        "date": "2026-04-06",
+        "end_time": "14:00",
+        "purpose": "Sample analysis run",
+        "request_id": "REQ-19753",
+        "resource_id": "R519",
+        "start_time": "11:00",
+        "user_id": "U2950"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-04-07",
+            "end_time": "14:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Wind Tunnel",
+        "resource_id": "R519",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Yuki Sato",
+        "user_id": "U2950"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "missing_approval",
+    "pair_id": "P10",
+    "policy_version": "1.0",
+    "scenario_id": "P10-A",
+    "split": "test",
+    "target_approval_id": "APV-88571",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-86063",
+          "expires_on": "2026-08-12",
+          "issued_on": "2025-06-30",
+          "resource_id": "R166",
+          "status": "issued",
+          "user_id": "U2480"
+        },
+        {
+          "approval_id": "APV-72270",
+          "expires_on": "2026-07-01",
+          "issued_on": "2025-08-10",
+          "resource_id": "R640",
+          "status": "issued",
+          "user_id": "U8877"
+        }
+      ],
+      "as_of_date": "2026-03-04",
+      "request": {
+        "date": "2026-03-24",
+        "end_time": "12:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-67740",
+        "resource_id": "R166",
+        "start_time": "11:00",
+        "user_id": "U2480"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-03-25",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Drone Test Arena",
+        "resource_id": "R166",
+        "status": "available"
+      },
+      "user": {
+        "department": "Chemistry",
+        "eligibility_status": "unknown",
+        "name": "Ingrid Larsen",
+        "user_id": "U2480"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R2_user_eligible"
+      ],
+      "reason_codes": {
+        "R2_user_eligible": "eligibility_unknown"
+      }
+    },
+    "manipulation": "unknown_eligibility",
+    "pair_id": "P11",
+    "policy_version": "1.0",
+    "scenario_id": "P11-U",
+    "split": "test",
+    "target_approval_id": "APV-86063",
+    "violated_requirement": "R2_user_eligible"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-86063",
+          "expires_on": "2026-08-12",
+          "issued_on": "2025-06-30",
+          "resource_id": "R166",
+          "status": "issued",
+          "user_id": "U2480"
+        },
+        {
+          "approval_id": "APV-72270",
+          "expires_on": "2026-07-01",
+          "issued_on": "2025-08-10",
+          "resource_id": "R640",
+          "status": "issued",
+          "user_id": "U8877"
+        }
+      ],
+      "as_of_date": "2026-03-04",
+      "request": {
+        "date": "2026-03-24",
+        "end_time": "12:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-67740",
+        "resource_id": "R166",
+        "start_time": "11:00",
+        "user_id": "U2480"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-03-25",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Drone Test Arena",
+        "resource_id": "R166",
+        "status": "available"
+      },
+      "user": {
+        "department": "Chemistry",
+        "eligibility_status": "eligible",
+        "name": "Ingrid Larsen",
+        "user_id": "U2480"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "unknown_eligibility",
+    "pair_id": "P11",
+    "policy_version": "1.0",
+    "scenario_id": "P11-A",
+    "split": "test",
+    "target_approval_id": "APV-86063",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-12689",
+          "expires_on": "2026-07-04",
+          "issued_on": "2025-12-28",
+          "resource_id": "R947",
+          "status": "issued",
+          "user_id": "U3387"
+        },
+        {
+          "approval_id": "APV-74319",
+          "expires_on": "2026-11-20",
+          "issued_on": "2025-11-26",
+          "resource_id": "R515",
+          "status": "issued",
+          "user_id": "U1718"
+        }
+      ],
+      "as_of_date": "2026-08-16",
+      "request": {
+        "date": "2026-08-26",
+        "end_time": "16:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-86859",
+        "resource_id": "R947",
+        "start_time": "13:00",
+        "user_id": "U3387"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-08-26",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Laser Cutter",
+        "resource_id": "R947",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "eligible",
+        "name": "Tomas Okafor",
+        "user_id": "U3387"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_expired"
+      }
+    },
+    "manipulation": "expired_approval",
+    "pair_id": "P12",
+    "policy_version": "1.0",
+    "scenario_id": "P12-U",
+    "split": "test",
+    "target_approval_id": "APV-12689",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-12689",
+          "expires_on": "2026-10-17",
+          "issued_on": "2025-12-28",
+          "resource_id": "R947",
+          "status": "issued",
+          "user_id": "U3387"
+        },
+        {
+          "approval_id": "APV-74319",
+          "expires_on": "2026-11-20",
+          "issued_on": "2025-11-26",
+          "resource_id": "R515",
+          "status": "issued",
+          "user_id": "U1718"
+        }
+      ],
+      "as_of_date": "2026-08-16",
+      "request": {
+        "date": "2026-08-26",
+        "end_time": "16:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-86859",
+        "resource_id": "R947",
+        "start_time": "13:00",
+        "user_id": "U3387"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-08-26",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Laser Cutter",
+        "resource_id": "R947",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "eligible",
+        "name": "Tomas Okafor",
+        "user_id": "U3387"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "expired_approval",
+    "pair_id": "P12",
+    "policy_version": "1.0",
+    "scenario_id": "P12-A",
+    "split": "test",
+    "target_approval_id": "APV-12689",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-98449",
+          "expires_on": "2026-01-13",
+          "issued_on": "2025-10-14",
+          "resource_id": "R692",
+          "status": "issued",
+          "user_id": "U2229"
+        },
+        {
+          "approval_id": "APV-82808",
+          "expires_on": "2026-04-17",
+          "issued_on": "2025-07-12",
+          "resource_id": "R581",
+          "status": "issued",
+          "user_id": "U6345"
+        }
+      ],
+      "as_of_date": "2026-03-05",
+      "request": {
+        "date": "2026-03-18",
+        "end_time": "12:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-39544",
+        "resource_id": "R692",
+        "start_time": "10:00",
+        "user_id": "U2229"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-03-18",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Field Vehicle",
+        "resource_id": "R692",
+        "status": "available"
+      },
+      "user": {
+        "department": "Biology",
+        "eligibility_status": "eligible",
+        "name": "Anika Sharma",
+        "user_id": "U2229"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_expired"
+      }
+    },
+    "manipulation": "expired_approval",
+    "pair_id": "P13",
+    "policy_version": "1.0",
+    "scenario_id": "P13-U",
+    "split": "test",
+    "target_approval_id": "APV-98449",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-98449",
+          "expires_on": "2026-08-02",
+          "issued_on": "2025-10-14",
+          "resource_id": "R692",
+          "status": "issued",
+          "user_id": "U2229"
+        },
+        {
+          "approval_id": "APV-82808",
+          "expires_on": "2026-04-17",
+          "issued_on": "2025-07-12",
+          "resource_id": "R581",
+          "status": "issued",
+          "user_id": "U6345"
+        }
+      ],
+      "as_of_date": "2026-03-05",
+      "request": {
+        "date": "2026-03-18",
+        "end_time": "12:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-39544",
+        "resource_id": "R692",
+        "start_time": "10:00",
+        "user_id": "U2229"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-03-18",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Field Vehicle",
+        "resource_id": "R692",
+        "status": "available"
+      },
+      "user": {
+        "department": "Biology",
+        "eligibility_status": "eligible",
+        "name": "Anika Sharma",
+        "user_id": "U2229"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "expired_approval",
+    "pair_id": "P13",
+    "policy_version": "1.0",
+    "scenario_id": "P13-A",
+    "split": "test",
+    "target_approval_id": "APV-98449",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-71223",
+          "expires_on": "2026-12-23",
+          "issued_on": "2025-10-28",
+          "resource_id": "R239",
+          "status": "issued",
+          "user_id": "U7242"
+        },
+        {
+          "approval_id": "APV-79317",
+          "expires_on": "2026-12-09",
+          "issued_on": "2026-02-16",
+          "resource_id": "R666",
+          "status": "issued",
+          "user_id": "U9624"
+        }
+      ],
+      "as_of_date": "2026-08-07",
+      "request": {
+        "date": "2026-08-11",
+        "end_time": "14:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-40444",
+        "resource_id": "R239",
+        "start_time": "12:00",
+        "user_id": "U7242"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-08-12",
+            "end_time": "14:00",
+            "start_time": "12:00"
+          }
+        ],
+        "name": "Conference Hall",
+        "resource_id": "R239",
+        "status": "available"
+      },
+      "user": {
+        "department": "Media Arts",
+        "eligibility_status": "unknown",
+        "name": "Amara Diallo",
+        "user_id": "U7242"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R2_user_eligible"
+      ],
+      "reason_codes": {
+        "R2_user_eligible": "eligibility_unknown"
+      }
+    },
+    "manipulation": "unknown_eligibility",
+    "pair_id": "P14",
+    "policy_version": "1.0",
+    "scenario_id": "P14-U",
+    "split": "test",
+    "target_approval_id": "APV-71223",
+    "violated_requirement": "R2_user_eligible"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-71223",
+          "expires_on": "2026-12-23",
+          "issued_on": "2025-10-28",
+          "resource_id": "R239",
+          "status": "issued",
+          "user_id": "U7242"
+        },
+        {
+          "approval_id": "APV-79317",
+          "expires_on": "2026-12-09",
+          "issued_on": "2026-02-16",
+          "resource_id": "R666",
+          "status": "issued",
+          "user_id": "U9624"
+        }
+      ],
+      "as_of_date": "2026-08-07",
+      "request": {
+        "date": "2026-08-11",
+        "end_time": "14:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-40444",
+        "resource_id": "R239",
+        "start_time": "12:00",
+        "user_id": "U7242"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-08-12",
+            "end_time": "14:00",
+            "start_time": "12:00"
+          }
+        ],
+        "name": "Conference Hall",
+        "resource_id": "R239",
+        "status": "available"
+      },
+      "user": {
+        "department": "Media Arts",
+        "eligibility_status": "eligible",
+        "name": "Amara Diallo",
+        "user_id": "U7242"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "unknown_eligibility",
+    "pair_id": "P14",
+    "policy_version": "1.0",
+    "scenario_id": "P14-A",
+    "split": "test",
+    "target_approval_id": "APV-71223",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-16245",
+          "expires_on": "2026-08-29",
+          "issued_on": "2025-10-18",
+          "resource_id": "R383",
+          "status": "issued",
+          "user_id": "U4257"
+        }
+      ],
+      "as_of_date": "2026-04-24",
+      "request": {
+        "date": "2026-05-10",
+        "end_time": "14:00",
+        "purpose": "Replication of earlier measurements",
+        "request_id": "REQ-84941",
+        "resource_id": "R155",
+        "start_time": "13:00",
+        "user_id": "U3423"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-10",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Soundproof Booth",
+        "resource_id": "R155",
+        "status": "available"
+      },
+      "user": {
+        "department": "Media Arts",
+        "eligibility_status": "eligible",
+        "name": "Ravi Iyer",
+        "user_id": "U3423"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_missing"
+      }
+    },
+    "manipulation": "missing_approval",
+    "pair_id": "P15",
+    "policy_version": "1.0",
+    "scenario_id": "P15-U",
+    "split": "test",
+    "target_approval_id": "APV-73848",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-73848",
+          "expires_on": "2026-10-17",
+          "issued_on": "2025-08-08",
+          "resource_id": "R155",
+          "status": "issued",
+          "user_id": "U3423"
+        },
+        {
+          "approval_id": "APV-16245",
+          "expires_on": "2026-08-29",
+          "issued_on": "2025-10-18",
+          "resource_id": "R383",
+          "status": "issued",
+          "user_id": "U4257"
+        }
+      ],
+      "as_of_date": "2026-04-24",
+      "request": {
+        "date": "2026-05-10",
+        "end_time": "14:00",
+        "purpose": "Replication of earlier measurements",
+        "request_id": "REQ-84941",
+        "resource_id": "R155",
+        "start_time": "13:00",
+        "user_id": "U3423"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-10",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Soundproof Booth",
+        "resource_id": "R155",
+        "status": "available"
+      },
+      "user": {
+        "department": "Media Arts",
+        "eligibility_status": "eligible",
+        "name": "Ravi Iyer",
+        "user_id": "U3423"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "missing_approval",
+    "pair_id": "P15",
+    "policy_version": "1.0",
+    "scenario_id": "P15-A",
+    "split": "test",
+    "target_approval_id": "APV-73848",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-30370",
+          "expires_on": "2026-10-08",
+          "issued_on": "2025-12-09",
+          "resource_id": "R505",
+          "status": "issued",
+          "user_id": "U1749"
+        },
+        {
+          "approval_id": "APV-78570",
+          "expires_on": "2026-07-24",
+          "issued_on": "2025-10-10",
+          "resource_id": "R766",
+          "status": "issued",
+          "user_id": "U9731"
+        }
+      ],
+      "as_of_date": "2026-05-29",
+      "request": {
+        "date": "2026-06-04",
+        "end_time": "16:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-23181",
+        "resource_id": "R505",
+        "start_time": "13:00",
+        "user_id": "U9754"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-06-04",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Anechoic Chamber",
+        "resource_id": "R505",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Leila Rahimi",
+        "user_id": "U9754"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_wrong_user"
+      }
+    },
+    "manipulation": "other_user_approval",
+    "pair_id": "P16",
+    "policy_version": "1.0",
+    "scenario_id": "P16-U",
+    "split": "test",
+    "target_approval_id": "APV-30370",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-30370",
+          "expires_on": "2026-10-08",
+          "issued_on": "2025-12-09",
+          "resource_id": "R505",
+          "status": "issued",
+          "user_id": "U9754"
+        },
+        {
+          "approval_id": "APV-78570",
+          "expires_on": "2026-07-24",
+          "issued_on": "2025-10-10",
+          "resource_id": "R766",
+          "status": "issued",
+          "user_id": "U9731"
+        }
+      ],
+      "as_of_date": "2026-05-29",
+      "request": {
+        "date": "2026-06-04",
+        "end_time": "16:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-23181",
+        "resource_id": "R505",
+        "start_time": "13:00",
+        "user_id": "U9754"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-06-04",
+            "end_time": "12:00",
+            "start_time": "11:00"
+          }
+        ],
+        "name": "Anechoic Chamber",
+        "resource_id": "R505",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Leila Rahimi",
+        "user_id": "U9754"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "other_user_approval",
+    "pair_id": "P16",
+    "policy_version": "1.0",
+    "scenario_id": "P16-A",
+    "split": "test",
+    "target_approval_id": "APV-30370",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-64628",
+          "expires_on": "2026-08-21",
+          "issued_on": "2025-07-13",
+          "resource_id": "R255",
+          "status": "issued",
+          "user_id": "U6324"
+        }
+      ],
+      "as_of_date": "2026-03-19",
+      "request": {
+        "date": "2026-03-29",
+        "end_time": "13:00",
+        "purpose": "Training session",
+        "request_id": "REQ-27674",
+        "resource_id": "R442",
+        "start_time": "10:00",
+        "user_id": "U9607"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-03-29",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Mass Spectrometer",
+        "resource_id": "R442",
+        "status": "available"
+      },
+      "user": {
+        "department": "Biology",
+        "eligibility_status": "eligible",
+        "name": "Daniel Novak",
+        "user_id": "U9607"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_missing"
+      }
+    },
+    "manipulation": "missing_approval",
+    "pair_id": "P17",
+    "policy_version": "1.0",
+    "scenario_id": "P17-U",
+    "split": "test",
+    "target_approval_id": "APV-71746",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-71746",
+          "expires_on": "2026-08-04",
+          "issued_on": "2025-06-05",
+          "resource_id": "R442",
+          "status": "issued",
+          "user_id": "U9607"
+        },
+        {
+          "approval_id": "APV-64628",
+          "expires_on": "2026-08-21",
+          "issued_on": "2025-07-13",
+          "resource_id": "R255",
+          "status": "issued",
+          "user_id": "U6324"
+        }
+      ],
+      "as_of_date": "2026-03-19",
+      "request": {
+        "date": "2026-03-29",
+        "end_time": "13:00",
+        "purpose": "Training session",
+        "request_id": "REQ-27674",
+        "resource_id": "R442",
+        "start_time": "10:00",
+        "user_id": "U9607"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-03-29",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Mass Spectrometer",
+        "resource_id": "R442",
+        "status": "available"
+      },
+      "user": {
+        "department": "Biology",
+        "eligibility_status": "eligible",
+        "name": "Daniel Novak",
+        "user_id": "U9607"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "missing_approval",
+    "pair_id": "P17",
+    "policy_version": "1.0",
+    "scenario_id": "P17-A",
+    "split": "test",
+    "target_approval_id": "APV-71746",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-21687",
+          "expires_on": "2026-11-28",
+          "issued_on": "2025-10-26",
+          "resource_id": "R157",
+          "status": "issued",
+          "user_id": "U7525"
+        },
+        {
+          "approval_id": "APV-16304",
+          "expires_on": "2026-10-01",
+          "issued_on": "2025-10-21",
+          "resource_id": "R892",
+          "status": "issued",
+          "user_id": "U6261"
+        }
+      ],
+      "as_of_date": "2026-06-27",
+      "request": {
+        "date": "2026-07-05",
+        "end_time": "15:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-92404",
+        "resource_id": "R157",
+        "start_time": "13:00",
+        "user_id": "U7525"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-06",
+            "end_time": "15:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "Rooftop Telescope",
+        "resource_id": "R157",
+        "status": "available"
+      },
+      "user": {
+        "department": "Biology",
+        "eligibility_status": "ineligible",
+        "name": "Owen Fitzgerald",
+        "user_id": "U7525"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R2_user_eligible"
+      ],
+      "reason_codes": {
+        "R2_user_eligible": "user_ineligible"
+      }
+    },
+    "manipulation": "ineligible_user",
+    "pair_id": "P18",
+    "policy_version": "1.0",
+    "scenario_id": "P18-U",
+    "split": "dev",
+    "target_approval_id": "APV-21687",
+    "violated_requirement": "R2_user_eligible"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-21687",
+          "expires_on": "2026-11-28",
+          "issued_on": "2025-10-26",
+          "resource_id": "R157",
+          "status": "issued",
+          "user_id": "U7525"
+        },
+        {
+          "approval_id": "APV-16304",
+          "expires_on": "2026-10-01",
+          "issued_on": "2025-10-21",
+          "resource_id": "R892",
+          "status": "issued",
+          "user_id": "U6261"
+        }
+      ],
+      "as_of_date": "2026-06-27",
+      "request": {
+        "date": "2026-07-05",
+        "end_time": "15:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-92404",
+        "resource_id": "R157",
+        "start_time": "13:00",
+        "user_id": "U7525"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-06",
+            "end_time": "15:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "Rooftop Telescope",
+        "resource_id": "R157",
+        "status": "available"
+      },
+      "user": {
+        "department": "Biology",
+        "eligibility_status": "eligible",
+        "name": "Owen Fitzgerald",
+        "user_id": "U7525"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "ineligible_user",
+    "pair_id": "P18",
+    "policy_version": "1.0",
+    "scenario_id": "P18-A",
+    "split": "dev",
+    "target_approval_id": "APV-21687",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-92978",
+          "expires_on": "2026-07-31",
+          "issued_on": "2025-12-29",
+          "resource_id": "R582",
+          "status": "issued",
+          "user_id": "U4026"
+        },
+        {
+          "approval_id": "APV-28269",
+          "expires_on": "2026-07-26",
+          "issued_on": "2025-12-29",
+          "resource_id": "R354",
+          "status": "issued",
+          "user_id": "U9249"
+        }
+      ],
+      "as_of_date": "2026-04-19",
+      "request": {
+        "date": "2026-05-03",
+        "end_time": "15:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-92010",
+        "resource_id": "R582",
+        "start_time": "13:00",
+        "user_id": "U4026"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-04",
+            "end_time": "15:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "Electron Microscope",
+        "resource_id": "R582",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "ineligible",
+        "name": "Sofia Marquez",
+        "user_id": "U4026"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R2_user_eligible"
+      ],
+      "reason_codes": {
+        "R2_user_eligible": "user_ineligible"
+      }
+    },
+    "manipulation": "ineligible_user",
+    "pair_id": "P19",
+    "policy_version": "1.0",
+    "scenario_id": "P19-U",
+    "split": "test",
+    "target_approval_id": "APV-92978",
+    "violated_requirement": "R2_user_eligible"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-92978",
+          "expires_on": "2026-07-31",
+          "issued_on": "2025-12-29",
+          "resource_id": "R582",
+          "status": "issued",
+          "user_id": "U4026"
+        },
+        {
+          "approval_id": "APV-28269",
+          "expires_on": "2026-07-26",
+          "issued_on": "2025-12-29",
+          "resource_id": "R354",
+          "status": "issued",
+          "user_id": "U9249"
+        }
+      ],
+      "as_of_date": "2026-04-19",
+      "request": {
+        "date": "2026-05-03",
+        "end_time": "15:00",
+        "purpose": "Quarterly equipment calibration",
+        "request_id": "REQ-92010",
+        "resource_id": "R582",
+        "start_time": "13:00",
+        "user_id": "U4026"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-04",
+            "end_time": "15:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "Electron Microscope",
+        "resource_id": "R582",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "eligible",
+        "name": "Sofia Marquez",
+        "user_id": "U4026"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "ineligible_user",
+    "pair_id": "P19",
+    "policy_version": "1.0",
+    "scenario_id": "P19-A",
+    "split": "test",
+    "target_approval_id": "APV-92978",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-96174",
+          "expires_on": "2026-11-05",
+          "issued_on": "2026-03-04",
+          "resource_id": "R7",
+          "status": "issued",
+          "user_id": "U8060"
+        },
+        {
+          "approval_id": "APV-54590",
+          "expires_on": "2026-11-15",
+          "issued_on": "2026-02-07",
+          "resource_id": "R145",
+          "status": "issued",
+          "user_id": "U7251"
+        }
+      ],
+      "as_of_date": "2026-08-26",
+      "request": {
+        "date": "2026-09-16",
+        "end_time": "12:00",
+        "purpose": "Team demonstration",
+        "request_id": "REQ-83769",
+        "resource_id": "R145",
+        "start_time": "11:00",
+        "user_id": "U7251"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-09-16",
+            "end_time": "10:00",
+            "start_time": "09:00"
+          }
+        ],
+        "name": "Spectrophotometer",
+        "resource_id": "R145",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "ineligible",
+        "name": "Kwame Mensah",
+        "user_id": "U7251"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R2_user_eligible"
+      ],
+      "reason_codes": {
+        "R2_user_eligible": "user_ineligible"
+      }
+    },
+    "manipulation": "ineligible_user",
+    "pair_id": "P20",
+    "policy_version": "1.0",
+    "scenario_id": "P20-U",
+    "split": "test",
+    "target_approval_id": "APV-54590",
+    "violated_requirement": "R2_user_eligible"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-96174",
+          "expires_on": "2026-11-05",
+          "issued_on": "2026-03-04",
+          "resource_id": "R7",
+          "status": "issued",
+          "user_id": "U8060"
+        },
+        {
+          "approval_id": "APV-54590",
+          "expires_on": "2026-11-15",
+          "issued_on": "2026-02-07",
+          "resource_id": "R145",
+          "status": "issued",
+          "user_id": "U7251"
+        }
+      ],
+      "as_of_date": "2026-08-26",
+      "request": {
+        "date": "2026-09-16",
+        "end_time": "12:00",
+        "purpose": "Team demonstration",
+        "request_id": "REQ-83769",
+        "resource_id": "R145",
+        "start_time": "11:00",
+        "user_id": "U7251"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-09-16",
+            "end_time": "10:00",
+            "start_time": "09:00"
+          }
+        ],
+        "name": "Spectrophotometer",
+        "resource_id": "R145",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Kwame Mensah",
+        "user_id": "U7251"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "ineligible_user",
+    "pair_id": "P20",
+    "policy_version": "1.0",
+    "scenario_id": "P20-A",
+    "split": "test",
+    "target_approval_id": "APV-54590",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-86784",
+          "expires_on": "2026-08-18",
+          "issued_on": "2025-10-20",
+          "resource_id": "R895",
+          "status": "issued",
+          "user_id": "U4354"
+        },
+        {
+          "approval_id": "APV-84971",
+          "expires_on": "2026-09-10",
+          "issued_on": "2025-12-05",
+          "resource_id": "R408",
+          "status": "issued",
+          "user_id": "U5625"
+        }
+      ],
+      "as_of_date": "2026-07-09",
+      "request": {
+        "date": "2026-07-13",
+        "end_time": "11:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-91618",
+        "resource_id": "R895",
+        "start_time": "10:00",
+        "user_id": "U4354"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-13",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Clean Room",
+        "resource_id": "R895",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "unknown",
+        "name": "Priya Natarajan",
+        "user_id": "U4354"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R2_user_eligible"
+      ],
+      "reason_codes": {
+        "R2_user_eligible": "eligibility_unknown"
+      }
+    },
+    "manipulation": "unknown_eligibility",
+    "pair_id": "P21",
+    "policy_version": "1.0",
+    "scenario_id": "P21-U",
+    "split": "test",
+    "target_approval_id": "APV-86784",
+    "violated_requirement": "R2_user_eligible"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-86784",
+          "expires_on": "2026-08-18",
+          "issued_on": "2025-10-20",
+          "resource_id": "R895",
+          "status": "issued",
+          "user_id": "U4354"
+        },
+        {
+          "approval_id": "APV-84971",
+          "expires_on": "2026-09-10",
+          "issued_on": "2025-12-05",
+          "resource_id": "R408",
+          "status": "issued",
+          "user_id": "U5625"
+        }
+      ],
+      "as_of_date": "2026-07-09",
+      "request": {
+        "date": "2026-07-13",
+        "end_time": "11:00",
+        "purpose": "Data collection session",
+        "request_id": "REQ-91618",
+        "resource_id": "R895",
+        "start_time": "10:00",
+        "user_id": "U4354"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-13",
+            "end_time": "09:00",
+            "start_time": "08:00"
+          }
+        ],
+        "name": "Clean Room",
+        "resource_id": "R895",
+        "status": "available"
+      },
+      "user": {
+        "department": "Operations",
+        "eligibility_status": "eligible",
+        "name": "Priya Natarajan",
+        "user_id": "U4354"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "unknown_eligibility",
+    "pair_id": "P21",
+    "policy_version": "1.0",
+    "scenario_id": "P21-A",
+    "split": "test",
+    "target_approval_id": "APV-86784",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-82370",
+          "expires_on": "2026-04-23",
+          "issued_on": "2025-09-26",
+          "resource_id": "R715",
+          "status": "issued",
+          "user_id": "U2883"
+        },
+        {
+          "approval_id": "APV-21752",
+          "expires_on": "2026-09-24",
+          "issued_on": "2025-11-08",
+          "resource_id": "R675",
+          "status": "issued",
+          "user_id": "U2357"
+        }
+      ],
+      "as_of_date": "2026-05-07",
+      "request": {
+        "date": "2026-05-25",
+        "end_time": "12:00",
+        "purpose": "Prototype testing",
+        "request_id": "REQ-11068",
+        "resource_id": "R715",
+        "start_time": "11:00",
+        "user_id": "U2883"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-25",
+            "end_time": "10:00",
+            "start_time": "09:00"
+          }
+        ],
+        "name": "Robotics Cage",
+        "resource_id": "R715",
+        "status": "available"
+      },
+      "user": {
+        "department": "Media Arts",
+        "eligibility_status": "eligible",
+        "name": "Samir Aziz",
+        "user_id": "U2883"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R3_valid_approval"
+      ],
+      "reason_codes": {
+        "R3_valid_approval": "approval_expired"
+      }
+    },
+    "manipulation": "expired_approval",
+    "pair_id": "P22",
+    "policy_version": "1.0",
+    "scenario_id": "P22-U",
+    "split": "dev",
+    "target_approval_id": "APV-82370",
+    "violated_requirement": "R3_valid_approval"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-82370",
+          "expires_on": "2026-08-03",
+          "issued_on": "2025-09-26",
+          "resource_id": "R715",
+          "status": "issued",
+          "user_id": "U2883"
+        },
+        {
+          "approval_id": "APV-21752",
+          "expires_on": "2026-09-24",
+          "issued_on": "2025-11-08",
+          "resource_id": "R675",
+          "status": "issued",
+          "user_id": "U2357"
+        }
+      ],
+      "as_of_date": "2026-05-07",
+      "request": {
+        "date": "2026-05-25",
+        "end_time": "12:00",
+        "purpose": "Prototype testing",
+        "request_id": "REQ-11068",
+        "resource_id": "R715",
+        "start_time": "11:00",
+        "user_id": "U2883"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-25",
+            "end_time": "10:00",
+            "start_time": "09:00"
+          }
+        ],
+        "name": "Robotics Cage",
+        "resource_id": "R715",
+        "status": "available"
+      },
+      "user": {
+        "department": "Media Arts",
+        "eligibility_status": "eligible",
+        "name": "Samir Aziz",
+        "user_id": "U2883"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "expired_approval",
+    "pair_id": "P22",
+    "policy_version": "1.0",
+    "scenario_id": "P22-A",
+    "split": "dev",
+    "target_approval_id": "APV-82370",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-44457",
+          "expires_on": "2026-08-21",
+          "issued_on": "2025-12-05",
+          "resource_id": "R623",
+          "status": "issued",
+          "user_id": "U7455"
+        },
+        {
+          "approval_id": "APV-24508",
+          "expires_on": "2026-08-08",
+          "issued_on": "2025-09-07",
+          "resource_id": "R105",
+          "status": "issued",
+          "user_id": "U7220"
+        }
+      ],
+      "as_of_date": "2026-06-22",
+      "request": {
+        "date": "2026-07-06",
+        "end_time": "14:00",
+        "purpose": "Training session",
+        "request_id": "REQ-35688",
+        "resource_id": "R623",
+        "start_time": "13:00",
+        "user_id": "U7455"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-07",
+            "end_time": "14:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "Recording Studio",
+        "resource_id": "R623",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "ineligible",
+        "name": "Noor Haddad",
+        "user_id": "U7455"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R2_user_eligible"
+      ],
+      "reason_codes": {
+        "R2_user_eligible": "user_ineligible"
+      }
+    },
+    "manipulation": "ineligible_user",
+    "pair_id": "P23",
+    "policy_version": "1.0",
+    "scenario_id": "P23-U",
+    "split": "test",
+    "target_approval_id": "APV-44457",
+    "violated_requirement": "R2_user_eligible"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-44457",
+          "expires_on": "2026-08-21",
+          "issued_on": "2025-12-05",
+          "resource_id": "R623",
+          "status": "issued",
+          "user_id": "U7455"
+        },
+        {
+          "approval_id": "APV-24508",
+          "expires_on": "2026-08-08",
+          "issued_on": "2025-09-07",
+          "resource_id": "R105",
+          "status": "issued",
+          "user_id": "U7220"
+        }
+      ],
+      "as_of_date": "2026-06-22",
+      "request": {
+        "date": "2026-07-06",
+        "end_time": "14:00",
+        "purpose": "Training session",
+        "request_id": "REQ-35688",
+        "resource_id": "R623",
+        "start_time": "13:00",
+        "user_id": "U7455"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-07-07",
+            "end_time": "14:00",
+            "start_time": "13:00"
+          }
+        ],
+        "name": "Recording Studio",
+        "resource_id": "R623",
+        "status": "available"
+      },
+      "user": {
+        "department": "Engineering",
+        "eligibility_status": "eligible",
+        "name": "Noor Haddad",
+        "user_id": "U7455"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "ineligible_user",
+    "pair_id": "P23",
+    "policy_version": "1.0",
+    "scenario_id": "P23-A",
+    "split": "test",
+    "target_approval_id": "APV-44457",
+    "violated_requirement": null
+  },
+  {
+    "authorization_state": "unauthorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-56199",
+          "expires_on": "2026-08-01",
+          "issued_on": "2025-11-12",
+          "resource_id": "R635",
+          "status": "issued",
+          "user_id": "U4709"
+        },
+        {
+          "approval_id": "APV-59303",
+          "expires_on": "2026-07-08",
+          "issued_on": "2026-01-12",
+          "resource_id": "R11",
+          "status": "issued",
+          "user_id": "U5004"
+        }
+      ],
+      "as_of_date": "2026-05-26",
+      "request": {
+        "date": "2026-05-29",
+        "end_time": "12:00",
+        "purpose": "Replication of earlier measurements",
+        "request_id": "REQ-90418",
+        "resource_id": "R635",
+        "start_time": "11:00",
+        "user_id": "U4709"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-29",
+            "end_time": "10:00",
+            "start_time": "09:00"
+          }
+        ],
+        "name": "Materials Tester",
+        "resource_id": "R635",
+        "status": "available"
+      },
+      "user": {
+        "department": "Biology",
+        "eligibility_status": "unknown",
+        "name": "Zofia Kowalska",
+        "user_id": "U4709"
+      }
+    },
+    "ground_truth": {
+      "decision": "deny",
+      "failed_requirements": [
+        "R2_user_eligible"
+      ],
+      "reason_codes": {
+        "R2_user_eligible": "eligibility_unknown"
+      }
+    },
+    "manipulation": "unknown_eligibility",
+    "pair_id": "P24",
+    "policy_version": "1.0",
+    "scenario_id": "P24-U",
+    "split": "dev",
+    "target_approval_id": "APV-56199",
+    "violated_requirement": "R2_user_eligible"
+  },
+  {
+    "authorization_state": "authorized",
+    "context": {
+      "approvals": [
+        {
+          "approval_id": "APV-56199",
+          "expires_on": "2026-08-01",
+          "issued_on": "2025-11-12",
+          "resource_id": "R635",
+          "status": "issued",
+          "user_id": "U4709"
+        },
+        {
+          "approval_id": "APV-59303",
+          "expires_on": "2026-07-08",
+          "issued_on": "2026-01-12",
+          "resource_id": "R11",
+          "status": "issued",
+          "user_id": "U5004"
+        }
+      ],
+      "as_of_date": "2026-05-26",
+      "request": {
+        "date": "2026-05-29",
+        "end_time": "12:00",
+        "purpose": "Replication of earlier measurements",
+        "request_id": "REQ-90418",
+        "resource_id": "R635",
+        "start_time": "11:00",
+        "user_id": "U4709"
+      },
+      "resource": {
+        "existing_bookings": [
+          {
+            "date": "2026-05-29",
+            "end_time": "10:00",
+            "start_time": "09:00"
+          }
+        ],
+        "name": "Materials Tester",
+        "resource_id": "R635",
+        "status": "available"
+      },
+      "user": {
+        "department": "Biology",
+        "eligibility_status": "eligible",
+        "name": "Zofia Kowalska",
+        "user_id": "U4709"
+      }
+    },
+    "ground_truth": {
+      "decision": "allow",
+      "failed_requirements": [],
+      "reason_codes": {}
+    },
+    "manipulation": "unknown_eligibility",
+    "pair_id": "P24",
+    "policy_version": "1.0",
+    "scenario_id": "P24-A",
+    "split": "dev",
+    "target_approval_id": "APV-56199",
+    "violated_requirement": null
+  }
+]

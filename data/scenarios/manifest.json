@@ -1,0 +1,45 @@
+{
+  "base_date": "2026-03-02",
+  "dev_pair_ids": [
+    "P01",
+    "P06",
+    "P07",
+    "P18",
+    "P22",
+    "P24"
+  ],
+  "n_pairs": 24,
+  "n_scenarios": 48,
+  "pairs_by_manipulation": {
+    "expired_approval": 4,
+    "ineligible_user": 4,
+    "missing_approval": 4,
+    "other_user_approval": 4,
+    "unknown_eligibility": 4,
+    "wrong_resource_approval": 4
+  },
+  "policy_sha256": "d08444e1fb84998383460dff6423c9e26f5382c5b05baf4262ca65f1c1e15141",
+  "policy_version": "1.0",
+  "scenarios_sha256": "ec45cd6e63c41d8531dd33c28296e8e49e0995c4f46c6a5d766de610ec088c35",
+  "seed": 20260307,
+  "test_pair_ids": [
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P19",
+    "P20",
+    "P21",
+    "P23"
+  ]
+}
